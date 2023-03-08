@@ -1,0 +1,104 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "lisbon lisbon paris belgrade" "venice tel cair newyork" "newdeli san san tokyo" "sydn sydn sydn sydn";
+}
+
+.grid-item {
+  border: 1px solid white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lisbon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  background-color: #3399CC;
+  grid-area: lisbon;
+}
+
+.paris {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  background-color: #33CCCC;
+  grid-area: paris;
+}
+
+.belgrade {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  background-color: #996699;
+  grid-area: belgrade;
+}
+
+.venice {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  background-color: #C24747;
+  grid-area: venice;
+}
+
+.tel-avive {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  background-color: #E2674A;
+  grid-area: tel;
+}
+
+.cair {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  background-color: #FFCC66;
+  grid-area: cair;
+}
+
+.new-york {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  background-color: #99CC99;
+  grid-area: newyork;
+}
+
+.new-deli {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  background-color: #669999;
+  grid-area: newdeli;
+}
+
+.san-francisco {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  background-color: #CC6699;
+  grid-area: san;
+}
+
+.tokyo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  background-color: #339966;
+  grid-area: tokyo;
+}
+
+.sydney {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  background-color: #666699;
+  grid-area: sydn;
+}
