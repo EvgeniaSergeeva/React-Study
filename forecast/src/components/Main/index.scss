@@ -1,0 +1,64 @@
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "lisbon lisbon paris belgrade"
+    "venice tel cair newyork"
+    "newdeli san san tokyo"
+    "sydn sydn sydn sydn";
+}
+.grid-item{
+    border: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.lisbon{
+    background-color: #3399CC;
+    grid-area: lisbon;
+}
+.paris{
+    background-color: #33CCCC;
+    grid-area: paris;
+}
+.belgrade{
+    background-color: #996699;
+    grid-area: belgrade;
+}
+.venice{
+    background-color:#C24747 ;
+    grid-area: venice;
+}
+.tel-avive{
+    background-color: #E2674A;
+    grid-area: tel;
+
+}
+.cair{
+    background-color: #FFCC66;
+    grid-area: cair;
+}
+.new-york{
+    background-color: #99CC99;
+    grid-area: newyork;
+}
+.new-deli{
+    background-color: #669999;
+    grid-area: newdeli;
+}
+.san-francisco{
+    background-color: #CC6699;
+    grid-area: san;
+}
+.tokyo{
+    background-color: #339966;
+    grid-area: tokyo;
+}
+.sydney{
+    background-color: #666699;
+    grid-area: sydn;
+}
